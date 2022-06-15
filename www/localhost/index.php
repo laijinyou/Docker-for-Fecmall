@@ -24,7 +24,7 @@ function getMysqlVersion()
 {
     if (extension_loaded('PDO_MYSQL')) {
         try {
-            $dbh = new PDO('mysql:host=mysql;dbname=mysql', 'root', '123456');
+            $dbh = new PDO('mysql:host=mysql5;dbname=mysql', 'root', 'fecmallxfd3ffaads123456');
             $sth = $dbh->query('SELECT VERSION() as version');
             $info = $sth->fetch();
         } catch (PDOException $e) {
