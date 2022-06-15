@@ -24,4 +24,5 @@
     $ composer install
     $ ./init
     ```
-5. 在浏览器中访问：`http://appfront.fecmall.test`就能看到效果。
+5. fecmall初始化：`http://appfront.fecmall.test/install`。
+6. 在浏览器中访问：`http://appfront.fecmall.test`。
