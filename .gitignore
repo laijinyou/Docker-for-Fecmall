@@ -2,6 +2,4 @@
 .DS_Store
 nohup.out
 docker-compose.yml.*
-www/*
-!www/localhost/
 logs/*

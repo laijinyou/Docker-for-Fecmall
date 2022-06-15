@@ -1,0 +1,42 @@
+{
+    "name": "yiisoft/yii2-app-advanced",
+    "description": "Yii 2 Advanced Project Template",
+    "keywords": ["yii2", "fecshop","cart", "shop", "e-commerce"],
+    "homepage": "http://www.fecshop.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "forum": "http://www.fecshop.com/forum/",
+        "wiki": "http://www.fecshop.com/wiki/",
+        "source": "https://github.com/fancyecommerce/yii2_fecshop_app_advanced"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.0",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-apidoc": "~2.0.0",
+        "fancyecommerce/fecshop": "2.17.4"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
