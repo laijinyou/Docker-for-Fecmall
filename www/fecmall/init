@@ -14,6 +14,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
+ // 检查必要的PHP扩展是否已经加载。
 $noLoadExtension = [];
 extension_loaded('openssl') || $noLoadExtension[] = 'openssl';
 extension_loaded('bcmath') || $noLoadExtension[] = 'bcmath';
@@ -29,27 +30,32 @@ extension_loaded('Reflection') || $noLoadExtension[] = 'Reflection';
 extension_loaded('xmlwriter') || $noLoadExtension[] = 'xmlwriter';
 extension_loaded('zip') || $noLoadExtension[] = 'zip';
 // extension_loaded('imap') || $noLoadExtension[] = 'imap';
-
 // extension_loaded('soap') || $noLoadExtension[] = 'soap';
-//extension_loaded('iconv') || $noLoadExtension[] = 'iconv';
-//extension_loaded('hash') || $noLoadExtension[] = 'hash';
-//extension_loaded('mcrypt') || $noLoadExtension[] = 'mcrypt';
-//extension_loaded('OAuth') || $noLoadExtension[] = 'OAuth';
+// extension_loaded('iconv') || $noLoadExtension[] = 'iconv';
+// extension_loaded('hash') || $noLoadExtension[] = 'hash';
+// extension_loaded('mcrypt') || $noLoadExtension[] = 'mcrypt';
+// extension_loaded('OAuth') || $noLoadExtension[] = 'OAuth';
 
+// PHP扩展要求不足的提示
 if (!empty($noLoadExtension)) {
     $noLoadExtensionStr = implode(',', $noLoadExtension);
     die("PHP extension [ $noLoadExtensionStr ]  is required by Fecshop. you must install this php extension \n");
 }  
 
+// 获取脚本执行参数
 $params = getParams();
+// 获取文件所在的目录
 $root = str_replace('\\', '/', __DIR__);
+// 加载环境数组
 $envs = require("$root/environments/index.php");
+// 获取环境数组键值
 $envNames = array_keys($envs);
 
 echo "Yii Application Initialization Tool v1.0\n\n";
 
 $envName = null;
 if (empty($params['env']) || $params['env'] === '1') {
+    // 脚本执行参数为空或等于1时
     echo "Which environment do you want the application to be initialized in?\n\n";
     foreach ($envNames as $i => $name) {
         echo "  [$i] $name\n";
@@ -109,6 +115,7 @@ foreach ($callbacks as $callback) {
 
 echo "\n  ... initialization completed.\n\n";
 
+// 获取文件列表
 function getFileList($root, $basePath = '')
 {
     $files = [];
@@ -129,6 +136,7 @@ function getFileList($root, $basePath = '')
     return $files;
 }
 
+// 复制文件
 function copyFile($root, $source, $target, &$all, $params)
 {
     if (!is_file($root . '/' . $source)) {
@@ -173,11 +181,14 @@ function copyFile($root, $source, $target, &$all, $params)
     return true;
 }
 
+// 获取脚本执行参数
 function getParams()
 {
     $rawParams = [];
     if (isset($_SERVER['argv'])) {
+        // 获取传递给脚本的参数数组
         $rawParams = $_SERVER['argv'];
+        // 将数组开头的单元移出数组(文件名)
         array_shift($rawParams);
     }
 
@@ -193,6 +204,7 @@ function getParams()
     return $params;
 }
 
+// 设置文件为可写权限
 function setWritable($root, $paths)
 {
     foreach ($paths as $writable) {
@@ -213,6 +225,7 @@ function setWritable($root, $paths)
     }
 }
 
+// 设置文件为可执行权限
 function setExecutable($root, $paths)
 {
     foreach ($paths as $executable) {
