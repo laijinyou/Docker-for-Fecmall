@@ -25,7 +25,7 @@
 						<div class="newsletter-container">
 							<input type="text" name="email" id="newsletter" placeholder="<?= Yii::$service->page->translate->__('Enter your email adress'); ?>..." title="Sign up for our newsletter" class="input-text form-control  validate-email input-block-level">
 							<button type="submit" title="Subscribe" class="newsletter-button">
-							确认</button>
+							JOIN</button>
 						</div>
 					</form>
 				</div>
@@ -38,3 +38,4 @@
 		<?=  Yii::$service->cms->staticblock->getStoreContentByIdentify('copy_right','appfront') ?>
 	</div>
 </footer>
+	
