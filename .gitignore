@@ -3,3 +3,4 @@
 nohup.out
 docker-compose.yml.*
 logs/*
+www/node_modules
