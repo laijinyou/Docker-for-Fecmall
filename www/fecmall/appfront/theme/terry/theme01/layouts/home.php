@@ -5,10 +5,10 @@ $jsOptions = [
 			'position' =>  'POS_END',
 		],
 		'js'	=>[
-			// 'js/jquery-3.0.0.min.js',
-			// 'js/jquery.lazyload.min.js',
-			// 'js/owl.carousel.min.js',
-			// 'js/js.js',
+			'js/jquery-3.0.0.min.js',
+			'js/jquery.lazyload.min.js',
+			'js/owl.carousel.min.js',
+			'js/js.js',
 		],
 	],
 ];
@@ -16,8 +16,7 @@ $jsOptions = [
 $cssOptions = [
 	[
 		'css'	=>[
-			// 'css/style.css',
-			// 'css/owl.carousel.css',
+			'css/owl.carousel.css',
 		],
 	],
 ];

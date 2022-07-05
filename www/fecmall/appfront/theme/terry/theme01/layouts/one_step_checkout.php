@@ -9,11 +9,9 @@
 ?>
 <?php
 $jsOptions = [
-	# js config 1
 	[
 		'options' => [
 			'position' =>  'POS_END',
-		//	'condition'=> 'lt IE 9',
 		],
 		'js'	=>[
 			'js/jquery-3.0.0.min.js',
@@ -21,38 +19,16 @@ $jsOptions = [
 			'js/owl.carousel.min.js',
 			'js/js.js',
 		],
-	],
-	# js config 2
-	[
-		'options' => [
-			'condition'=> 'lt IE 9',
-		],
-		'js'	=>[
-			'js/ie9js.js'
-		],
-	],
+	]
 ];
 
-# css config
 $cssOptions = [
-	# css config 1.
 	[
 		'css'	=>[
 			'css/style.css',
-			'css/ie.css',
 			'onestepcheckout/onestepcheckout.css',
 		],
-	],
-	
-	# css config 2.
-	[
-		'options' => [
-			'condition'=> 'lt IE 9',
-		],
-		'css'	=>[
-			'css/ltie9.css',
-		],
-	],
+	]
 ];
 \Yii::$service->page->asset->jsOptions 	= \yii\helpers\ArrayHelper::merge($jsOptions, \Yii::$service->page->asset->jsOptions);
 \Yii::$service->page->asset->cssOptions = \yii\helpers\ArrayHelper::merge($cssOptions, \Yii::$service->page->asset->cssOptions);				

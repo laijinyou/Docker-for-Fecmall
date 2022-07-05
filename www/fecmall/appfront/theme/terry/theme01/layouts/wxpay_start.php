@@ -1,19 +1,8 @@
 <?php
-/**
- * FecShop file.
- *
- * @link http://www.fecshop.com/
- * @copyright Copyright (c) 2016 FecShop Software LLC
- * @license http://www.fecshop.com/license/
- */
-?>
-<?php
 $jsOptions = [
-	# js config 1
 	[
 		'options' => [
 			'position' =>  'POS_HEAD',
-		//	'condition'=> 'lt IE 9',
 		],
 		'js'	=>[
 			'js/jquery-3.0.0.min.js',
