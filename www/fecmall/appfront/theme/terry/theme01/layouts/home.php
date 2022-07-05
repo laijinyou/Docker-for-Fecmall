@@ -30,6 +30,17 @@ $cssOptions = [
 <head>
 <?= Yii::$service->page->widget->render('base/head',$this); ?>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+			gridTemplateRows: {
+				'7': 'repeat(7, minmax(0, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
 <?= Yii::$service->page->widget->render('base/beforeContent',$this); ?>
@@ -88,32 +99,32 @@ $cssOptions = [
 		<!-- categories,carousel,cards -->
 		<div>
 			<!-- categories -->
-			<div class="bg-white rounded-md border-solid border-2 shadow-md">
-				<ul class="font-bold p-5">
-					<div class="mb-2">
-						<span class="text-lg">产品</span>
-						<span class="text-xs text-blue-600 pl-2"><a href="">查看全部</a></span>
-					</div>
-					<li class="text-sm leading-loose"><a href="">自动化和控制</a></li>
-					<li class="text-sm leading-loose"><a href="">盒子，外壳，机架</a></li>
-					<li class="text-sm leading-loose"><a href="">电缆组件</a></li>
-					<li class="text-sm leading-loose"><a href="">电缆，电线</a></li>
-					<li class="text-sm leading-loose"><a href="">连接器，互连器件</a></li>
-					<li class="text-sm leading-loose"><a href="">机电元件</a></li>
-					<li class="text-sm leading-loose"><a href="">五金件，紧固件，配件</a></li>
-					<li class="text-sm leading-loose"><a href="">网络解决方案</a></li>
-					<li class="text-sm leading-loose"><a href="">无源元件</a></li>
-					<li class="text-sm leading-loose"><a href="">电源，电路保护</a></li>
-					<li class="text-sm leading-loose"><a href="">半导体</a></li>
-					<li class="text-sm leading-loose"><a href="">测试产品</a></li>
-					<li class="text-sm leading-loose"><a href="">工具</a></li>
-					<li class="text-sm leading-loose"><a href="">变压器</a></li>
+			<div class="bg-white rounded-md border-solid border-2 shadow-md font-bold p-5">
+				<div class="mb-2">
+					<span class="text-lg">产品</span>
+					<span class="text-xs text-blue-600 pl-2"><a href="">查看全部</a></span>
+				</div>
+				<ul class="grid grid-rows-7 grid-flow-col gap-2">
+					<li class="text-sm"><a href="">自动化和控制</a></li>
+					<li class="text-sm"><a href="">盒子，外壳，机架</a></li>
+					<li class="text-sm"><a href="">电缆组件</a></li>
+					<li class="text-sm"><a href="">电缆，电线</a></li>
+					<li class="text-sm"><a href="">连接器，互连器件</a></li>
+					<li class="text-sm"><a href="">机电元件</a></li>
+					<li class="text-sm"><a href="">五金件，紧固件，配件</a></li>
+					<li class="text-sm"><a href="">网络解决方案</a></li>
+					<li class="text-sm"><a href="">无源元件</a></li>
+					<li class="text-sm"><a href="">电源，电路保护</a></li>
+					<li class="text-sm"><a href="">半导体</a></li>
+					<li class="text-sm"><a href="">测试产品</a></li>
+					<li class="text-sm"><a href="">工具</a></li>
+					<li class="text-sm"><a href="">变压器</a></li>
 				</ul>
 			</div>
 			<!-- carousel -->
 			<div class="my-3">
 				<div id="fecshop-home-big-img">    
-					<div class="container">          
+					<div class="w-full">          
 						<div class="row">            
 							<div class="span12">              
 								<div id="owl-fecshop" class="owl-carousel">                
@@ -149,13 +160,13 @@ $cssOptions = [
 				<div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
 					<div class="bg-gradient-to-r from-gray-900 py-4 px-5">
 						<div class="text-lg font-bold">配送信息</div>
-						<p class="text-sm sm:hidden">您对订单状态或者什么时候安排交付有疑问吗？</p>
+						<p class="text-sm">您对订单状态或者什么时候安排交付有疑问吗？</p>
 					</div>
 				</div>
 				<div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
 					<div class="bg-gradient-to-r from-gray-900 py-4 px-5">
 						<div class="text-lg font-bold">配送信息</div>
-						<p class="text-sm sm:hidden">您对订单状态或者什么时候安排交付有疑问吗？</p>
+						<p class="text-sm">您对订单状态或者什么时候安排交付有疑问吗？</p>
 					</div>
 				</div>
 			</div>
