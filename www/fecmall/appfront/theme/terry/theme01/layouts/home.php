@@ -29,7 +29,6 @@ $cssOptions = [
 	# css config 1.
 	[
 		'css'	=>[
-			'css/dist.css',
 			'css/style.css',
 			'css/owl.carousel.css',
 		],
