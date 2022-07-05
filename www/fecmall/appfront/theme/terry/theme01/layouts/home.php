@@ -112,32 +112,30 @@ $cssOptions = [
 			</div>
 			<!-- carousel -->
 			<div class="my-3">
-				
-
-
-
-				<div id="default-carousel" class="relative">
-					<!-- Carousel wrapper -->
-					<div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-							<!-- Item 1 -->
-						<div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20">
-							<img src="https://img.japanabc.com/appfront/images/en_1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="carousel">
-						</div>
-						<!-- Item 2 -->
-						<div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10">
-							<img src="https://img.japanabc.com/appfront/images/en_2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="carousel">
-						</div>
-						<!-- Item 3 -->
-						<div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10">
-							<img src="https://img.japanabc.com/appfront/images/en_3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="carousel">
-						</div>
-					</div>
-					<!-- Slider indicators -->
-					<div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-						<button class="w-3 h-3 rounded-full bg-red-500"></button>
-						<button class="w-3 h-3 rounded-full bg-white/50"></button>
-						<button class="w-3 h-3 rounded-full bg-white/50"></button>
-					</div>
+				<div id="fecshop-home-big-img">    
+					<div class="container">          
+						<div class="row">            
+							<div class="span12">              
+								<div id="owl-fecshop" class="owl-carousel">                
+									<div class="item">
+										<a href="http://appfront.fecmall.test/">
+											<img class="lazyOwl" data-src="https://img.japanabc.com/appfront/images/en_1.jpg" alt="" />
+										</a>
+									</div>                
+									<div class="item">
+										<a href="http://appfront.fecmall.test/">
+											<img class="lazyOwl" data-src="https://img.japanabc.com/appfront/images/en_2.jpg" alt="" />
+										</a>
+									</div>                
+									<div class="item">
+										<a href="http://appfront.fecmall.test/">
+											<img class="lazyOwl" data-src="https://img.japanabc.com/appfront/images/en_3.jpg" alt="" />
+										</a>
+									</div>              
+								</div>            
+							</div>          
+						</div>        
+					</div>    
 				</div>
 			</div>
 			<!-- cards -->
@@ -238,7 +236,7 @@ $cssOptions = [
 	<!-- Footer -->
 	<div class="bg-black text-gray-300">
 		<div class="bg-zinc-500">
-			保持联系
+			保持联系 
 		</div>
 		<div>
 			<div>
