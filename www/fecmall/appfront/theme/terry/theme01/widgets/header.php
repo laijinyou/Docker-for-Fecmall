@@ -1,4 +1,4 @@
-<div class="h-32 bg-black">
+<div class="h-32 bg-black sm:h-16">
   <div class="max-w-screen-xl mx-auto">
     <div class="h-16 text-white flex justify-between">
       <!-- menu -->
@@ -9,7 +9,7 @@
       </div>
       <!-- logo -->
       <div class="px-2">
-        <div class="bg-zinc-700 h-16 pt-1 px-2 transform -skew-x-12">
+        <div class="bg-zinc-700 h-16 pt-1 px-2 transform -skew-x-12 w-20">
           <img class="transform skew-x-12" src="https://www.digikey.cn/-/media/Images/Header/logo_dk.png" alt="logo">
           <div class="text-center text-xs italic font-bold transform skew-x-12">德州电子</div>
         </div>
@@ -32,7 +32,7 @@
       </div>
     </div>
     <!-- Search -->
-    <div class="h-16 bg-zinc-500">
+    <div class="h-16 bg-zinc-500 sm:hidden">
       <div class="flex justify-start py-2 mx-4">
         <input type="search" class="w-full h-11 border-0 focus:ring-0 appearance-none">
         <button class="bg-white border-0">
