@@ -1,7 +1,7 @@
 <div class="bg-gray-50 p-5">
   <div class="max-w-screen-xl mx-auto">
     <!-- categories,carousel,cards -->
-    <div class="grid grid-cols-5 gap-2">
+    <div class="lg:grid lg:grid-cols-5 lg:gap-2">
 
 
 
@@ -9,44 +9,44 @@
       <div class="bg-white rounded-md border-solid border-2 shadow-md font-bold p-5 lg:w-60 col-span-1">
         <div class="mb-2">
           <span class="text-lg">产品</span>
-          <span class="text-xs text-blue-600 pl-2"><a href="">查看全部</a></span>
+          <span class="text-xs text-blue-800 ml-2"><a href="">查看全部</a></span>
         </div>
         <div class="grid gap-2 sm:grid-rows-7 sm:grid-flow-col lg:grid-rows-none lg:grid-flow-row">
-          <div class="text-sm"><a href="">自动化和控制</a></div>
-          <div class="text-sm"><a href="">盒子，外壳，机架</a></div>
-          <div class="text-sm"><a href="">电缆组件</a></div>
-          <div class="text-sm"><a href="">电缆，电线</a></div>
-          <div class="text-sm"><a href="">连接器，互连器件</a></div>
-          <div class="text-sm"><a href="">机电元件</a></div>
-          <div class="text-sm"><a href="">五金件，紧固件，配件</a></div>
-          <div class="text-sm"><a href="">网络解决方案</a></div>
-          <div class="text-sm"><a href="">无源元件</a></div>
-          <div class="text-sm"><a href="">电源，电路保护</a></div>
-          <div class="text-sm"><a href="">半导体</a></div>
-          <div class="text-sm"><a href="">测试产品</a></div>
-          <div class="text-sm"><a href="">工具</a></div>
-          <div class="text-sm"><a href="">变压器</a></div>
+          <div class="text-xs"><a href="">自动化和控制</a></div>
+          <div class="text-xs"><a href="">盒子，外壳，机架</a></div>
+          <div class="text-xs"><a href="">电缆组件</a></div>
+          <div class="text-xs"><a href="">电缆，电线</a></div>
+          <div class="text-xs"><a href="">连接器，互连器件</a></div>
+          <div class="text-xs"><a href="">机电元件</a></div>
+          <div class="text-xs"><a href="">五金件，紧固件，配件</a></div>
+          <div class="text-xs"><a href="">网络解决方案</a></div>
+          <div class="text-xs"><a href="">无源元件</a></div>
+          <div class="text-xs"><a href="">电源，电路保护</a></div>
+          <div class="text-xs"><a href="">半导体</a></div>
+          <div class="text-xs"><a href="">测试产品</a></div>
+          <div class="text-xs"><a href="">工具</a></div>
+          <div class="text-xs"><a href="">变压器</a></div>
         </div>
       </div>
 
 
 
       <!-- carousel -->
-      <div class="my-3 col-span-3 lg:my-0">
+      <div class="my-3 lg:col-span-3 lg:my-0">
         <div class="owl-carousel owl-theme" id="owl-big-images">
           <div class="item">
               <a href="http://appfront.fecmall.test/">
-                <img src="https://img.japanabc.com/appfront/images/en_1.jpg" alt="" />
+                <img src="https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Large/Help%20and%20Support.jpg" alt="" />
               </a>
           </div>
           <div class="item">
             <a href="http://appfront.fecmall.test/">
-              <img src="https://img.japanabc.com/appfront/images/en_2.jpg" alt="" />
+              <img src="https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Large/Help%20and%20Support.jpg" alt="" />
             </a>
           </div>
           <div class="item">
             <a href="http://appfront.fecmall.test/">
-              <img src="https://img.japanabc.com/appfront/images/en_3.jpg" alt="" />
+              <img src="https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Large/Help%20and%20Support.jpg" alt="" />
             </a>
           </div>
         </div>
@@ -56,20 +56,20 @@
 
 
       <!-- cards -->
-      <div class="text-white hidden md:flex md:justify-between md:gap-2 lg:block lg:w-60 col-span-1">
-        <div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
+      <div class="text-white hidden md:grid md:grid-cols-3 md:gap-x-2 lg:grid-cols-1 lg:col-span-1 lg:gap-y-px">
+        <div class="rounded-md border-solid border-2 shadow-md bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
           <div class="bg-gradient-to-r from-gray-900 py-4 px-5 h-36">
             <div class="text-lg font-bold">配送信息</div>
             <p class="text-sm">您对订单状态或者什么时候安排交付有疑问吗？</p>
           </div>
         </div>
-        <div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')] lg:my-2">
+        <div class="rounded-md border-solid border-2 shadow-md bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')] lg:my-2">
           <div class="bg-gradient-to-r from-gray-900 py-4 px-5 h-36">
             <div class="text-lg font-bold">配送信息</div>
             <p class="text-sm">您对订单状态或者什么时候安排交付有疑问吗？</p>
           </div>
         </div>
-        <div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
+        <div class="rounded-md border-solid border-2 shadow-md bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
           <div class="bg-gradient-to-r from-gray-900 py-4 px-5 h-36">
             <div class="text-lg font-bold">配送信息</div>
             <p class="text-sm">您对订单状态或者什么时候安排交付有疑问吗？</p>
@@ -202,7 +202,7 @@
 
     <!-- special makers -->
     <div>
-      <h2 class="text-lg mb-2 font-bold">特色制造商<span class="text-xs text-blue-600 pl-2"><a href="">查看全部</a></span></h2>
+      <h2 class="text-lg mb-2 font-bold">特色制造商<span class="text-xs text-blue-800 pl-2"><a href="">查看全部</a></span></h2>
       <div class="owl-carousel owl-theme" id="owl-special-makers">
         <div class="item bg-white rounded-md border-solid border-2 shadow-md">
           <a href="">
@@ -284,7 +284,7 @@
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      autoplaySpeed: 500,
+      autoplaySpeed: 600,
 
     });
 
@@ -296,7 +296,7 @@
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      autoplaySpeed: 500,
+      autoplaySpeed: 800,
       responsive: {
         0: {
           items: 3
@@ -321,7 +321,7 @@
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      autoplaySpeed: 500,
+      autoplaySpeed: 700,
       responsive: {
         0: {
           items: 1
