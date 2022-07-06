@@ -104,22 +104,22 @@ $cssOptions = [
 					<span class="text-lg">产品</span>
 					<span class="text-xs text-blue-600 pl-2"><a href="">查看全部</a></span>
 				</div>
-				<ul class="grid grid-rows-7 grid-flow-col gap-2">
-					<li class="text-sm"><a href="">自动化和控制</a></li>
-					<li class="text-sm"><a href="">盒子，外壳，机架</a></li>
-					<li class="text-sm"><a href="">电缆组件</a></li>
-					<li class="text-sm"><a href="">电缆，电线</a></li>
-					<li class="text-sm"><a href="">连接器，互连器件</a></li>
-					<li class="text-sm"><a href="">机电元件</a></li>
-					<li class="text-sm"><a href="">五金件，紧固件，配件</a></li>
-					<li class="text-sm"><a href="">网络解决方案</a></li>
-					<li class="text-sm"><a href="">无源元件</a></li>
-					<li class="text-sm"><a href="">电源，电路保护</a></li>
-					<li class="text-sm"><a href="">半导体</a></li>
-					<li class="text-sm"><a href="">测试产品</a></li>
-					<li class="text-sm"><a href="">工具</a></li>
-					<li class="text-sm"><a href="">变压器</a></li>
-				</ul>
+				<div class="grid gap-2 sm:grid-rows-7 sm:grid-flow-col lg:grid-rows-none lg:grid-flow-row">
+					<div class="text-sm"><a href="">自动化和控制</a></div>
+					<div class="text-sm"><a href="">盒子，外壳，机架</a></div>
+					<div class="text-sm"><a href="">电缆组件</a></div>
+					<div class="text-sm"><a href="">电缆，电线</a></div>
+					<div class="text-sm"><a href="">连接器，互连器件</a></div>
+					<div class="text-sm"><a href="">机电元件</a></div>
+					<div class="text-sm"><a href="">五金件，紧固件，配件</a></div>
+					<div class="text-sm"><a href="">网络解决方案</a></div>
+					<div class="text-sm"><a href="">无源元件</a></div>
+					<div class="text-sm"><a href="">电源，电路保护</a></div>
+					<div class="text-sm"><a href="">半导体</a></div>
+					<div class="text-sm"><a href="">测试产品</a></div>
+					<div class="text-sm"><a href="">工具</a></div>
+					<div class="text-sm"><a href="">变压器</a></div>
+				</div>
 			</div>
 			<!-- carousel -->
 			<div class="my-3">
@@ -150,14 +150,14 @@ $cssOptions = [
 				</div>
 			</div>
 			<!-- cards -->
-			<div class="grid grid-cols-3 gap-3 text-white">
+			<div class="text-white hidden md:flex md:justify-between md:gap-2 lg:block lg:w-52">
 				<div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
 					<div class="bg-gradient-to-r from-gray-900 py-4 px-5">
 						<div class="text-lg font-bold">配送信息</div>
 						<p class="text-sm">您对订单状态或者什么时候安排交付有疑问吗？</p>
 					</div>
 				</div>
-				<div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')]">
+				<div class="bg-[url('https://www.digikey.cn/-/media/Images/2021%20Homepage%20Images/Small/Boxes.jpg')] lg:my-2">
 					<div class="bg-gradient-to-r from-gray-900 py-4 px-5">
 						<div class="text-lg font-bold">配送信息</div>
 						<p class="text-sm">您对订单状态或者什么时候安排交付有疑问吗？</p>
