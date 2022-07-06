@@ -5,10 +5,8 @@ $jsOptions = [
 			'position' =>  'POS_END',
 		],
 		'js'	=>[
-			'js/jquery-3.0.0.min.js',
-			'js/jquery.lazyload.min.js',
-			'js/owl.carousel.min.js',
-			'js/js.js',
+			'js/jquery-3.6.0.min.js',
+			'OwlCarousel2/owl.carousel.min.js',
 		],
 	],
 ];
@@ -16,7 +14,9 @@ $jsOptions = [
 $cssOptions = [
 	[
 		'css'	=>[
-			'css/owl.carousel.css',
+      'css/home.css',
+			'OwlCarousel2/owl.theme.default.min.css',
+      'OwlCarousel2/owl.carousel.min.css',
 		],
 	],
 ];
@@ -123,31 +123,23 @@ $cssOptions = [
 			</div>
 			<!-- carousel -->
 			<div class="my-3">
-				<div id="fecshop-home-big-img">    
-					<div class="w-full">          
-						<div class="row">            
-							<div class="span12">              
-								<div id="owl-fecshop" class="owl-carousel">                
-									<div class="item">
-										<a href="http://appfront.fecmall.test/">
-											<img class="lazyOwl" data-src="https://img.japanabc.com/appfront/images/en_1.jpg" alt="" />
-										</a>
-									</div>                
-									<div class="item">
-										<a href="http://appfront.fecmall.test/">
-											<img class="lazyOwl" data-src="https://img.japanabc.com/appfront/images/en_2.jpg" alt="" />
-										</a>
-									</div>                
-									<div class="item">
-										<a href="http://appfront.fecmall.test/">
-											<img class="lazyOwl" data-src="https://img.japanabc.com/appfront/images/en_3.jpg" alt="" />
-										</a>
-									</div>              
-								</div>            
-							</div>          
-						</div>        
-					</div>    
-				</div>
+          <div class="owl-carousel owl-theme">                
+            <div class="item">
+              <a href="http://appfront.fecmall.test/">
+                <img src="https://img.japanabc.com/appfront/images/en_1.jpg" alt="" />
+              </a>
+            </div>                
+            <div class="item">
+              <a href="http://appfront.fecmall.test/">
+                <img src="https://img.japanabc.com/appfront/images/en_2.jpg" alt="" />
+              </a>
+            </div>                
+            <div class="item">
+              <a href="http://appfront.fecmall.test/">
+                <img src="https://img.japanabc.com/appfront/images/en_3.jpg" alt="" />
+              </a>
+            </div>              
+          </div> 
 			</div>
 			<!-- cards -->
 			<div class="text-white hidden md:flex md:justify-between md:gap-2 lg:block lg:w-52">
@@ -478,7 +470,25 @@ $cssOptions = [
   </div>
 </footer>
 
-
+<script>
+<?php $this->beginBlock('owl_carousel_home') ?>  
+$(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+    items: 1,
+    margin: 10,
+    loop: true,
+    dots: true,
+    lazyLoad: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    autoplaySpeed: 500,
+    
+  });
+});
+<?php $this->endBlock(); ?>  
+</script>  
+<?php $this->registerJs($this->blocks['owl_carousel_home'],\yii\web\View::POS_END);//将编写的js代码注册到页面底部 ?>
 
 <?php $this->endBody() ?>
 </body>
