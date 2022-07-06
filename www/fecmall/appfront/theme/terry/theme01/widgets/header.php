@@ -26,8 +26,8 @@
       </div>
     </div>
       <!-- languages -->
-      <div class="w-full py-4 pl-4 sm:w-10">
-        <img class="w-8" src="https://www.digikey.com/-/media/Images/Global/Flags/Square/CN.png" alt="languages">
+      <div class="w-full py-3 pl-4 sm:w-14 sm:pl-0">
+        <img class="w-10" src="https://www.digikey.com/-/media/Images/Global/Flags/Square/CN.png" alt="languages">
       </div>
       <!-- account -->
       <div class="p-2">
