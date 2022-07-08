@@ -5,12 +5,8 @@ $jsOptions = [
 			'position' =>  'POS_END',
 		],
 		'js'	=>[
-			'js/jquery-3.0.0.min.js',
-			'js/jquery.lazyload.min.js',
-			'js/owl.carousel.min.js',     
-			'elevatezoom/jquery.elevatezoom.js',
-			'fancybox/jquery.fancybox.pack.js',
-			'js/js.js',
+			'js/jquery-3.6.0.min.js',
+			'OwlCarousel2/owl.carousel.min.js',
 		],
 	],
 ];
@@ -18,9 +14,9 @@ $jsOptions = [
 $cssOptions = [
 	[
 		'css'	=>[
-			'css/style.css',
-			'css/owl.carousel.css',
-			'fancybox/jquery.fancybox.css',
+      'css/home.css',
+			'OwlCarousel2/owl.theme.default.min.css',
+      'OwlCarousel2/owl.carousel.min.css',
 		],
 	],
 ];
@@ -33,23 +29,36 @@ $cssOptions = [
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?= $currentLangCode = Yii::$service->store->currentLangCode; ?>" lang="<?= $currentLangCode ?>">
 <head>
 <?= Yii::$service->page->widget->render('base/head',$this); ?>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+			gridTemplateRows: {
+				'7': 'repeat(7, minmax(0, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
 <?= Yii::$service->page->widget->render('base/beforeContent',$this); ?>
 <?php $this->beginBody() ?>
-	<header id="header">
-		<?= Yii::$service->page->widget->render('base/header',$this); ?>
-		<?= Yii::$service->page->widget->render('base/menu',$this); ?>
-	</header>
-	
-	<div class="main-container">
-		<?= $content; ?>
-	</div>
-	<div class="footer-container">
-		<?= Yii::$service->page->widget->render('base/footer',$this); ?>
-	</div>
-    <?= Yii::$service->page->widget->render('base/trace',$this); ?>
-	<?= Yii::$service->page->widget->render('base/scroll',$this); ?>
+	<!-- Header -->
+	<?= Yii::$service->page->widget->render('base/header',$this); ?>
+
+
+
+	<!-- Main -->
+	<?= $content; ?>
+
+
+	<!-- Footer -->
+	<?= Yii::$service->page->widget->render('base/footer',$this); ?>
+
+
+
 <?php $this->endBody() ?>
 </body>
 </html>
