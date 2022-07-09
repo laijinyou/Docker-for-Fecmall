@@ -45,6 +45,23 @@
       <div class="hidden lg:block lg:w-20 lg:absolute lg:top-24 lg:left-64">
         菜单
       </div>
+
+
+      <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full opacity-60 bg-black">
+        <div class="relative w-3/4 h-full bg-white">
+          <div class="h-16 bg-black flex justify-between">
+            <img src="https://www.digikey.cn/-/media/Images/Header/logo_dk.png" alt="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+          <ul>
+            <li class="h-11 border-b-2">产品</li>
+            <li class="h-11 border-b-2">制造商</li>
+            <li class="h-11 border-b-2">资源</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
