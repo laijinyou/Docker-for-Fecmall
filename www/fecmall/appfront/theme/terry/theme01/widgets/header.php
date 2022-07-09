@@ -159,7 +159,7 @@
 
     // 关闭移动端菜单
     $("#moblie-menu-closed").click(function() {
-      $("#mobile-menu-mian").addClass("hidden");
+      $("#mobile-menu-main").addClass("hidden");
     });
   });
   <?php $this->endBlock(); ?>
