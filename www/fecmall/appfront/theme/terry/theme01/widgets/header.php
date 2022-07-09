@@ -47,76 +47,83 @@
       </div>
 
 
-      <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full bg-opacity-60 bg-black" id="mobile-menu-first">
+      <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full bg-opacity-60 bg-black hidden" id="mobile-menu-main">
         <div class="relative w-3/4 h-full bg-white">
           <div class="h-16 bg-black flex justify-between p-2.5">
             <img class="h-11" src="https://www.digikey.cn/-/media/Images/Header/logo_dk.png" alt="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-11" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </div>
-          <ul class="text-black" id="mobile-menu-first">
-            <li class="h-11 border-b-2 flex justify-between" id="mobile-product-menu">
-              <div class="my-3 ml-3">产品</div>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            <div id="moblie-menu-closed">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-11" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
-            </li>
-            <li class="h-11 border-b-2 flex justify-between">
-              <div class="my-3 ml-3">制造商</div>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-              </svg>
-            </li>
-            <li class="h-11 border-b-2 flex justify-between">
-              <div class="my-3 ml-3">资源</div>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-              </svg>
-            </li>
-          </ul>
-
-          <div class="text-black hidden" id="mobile-menu-second">
-            <div class="flex justify-start h-11 border-b-2" id="moblie-menu-back">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
-              <div class="text-xs my-3.5">后退</div>
             </div>
-            <ul class="hidden">
-              <li class="h-8 flex justify-between">
-                <div class="my-3.5 ml-3.5 text-sm">产品</div>
+          </div>
+
+          <div class="text-black">
+            <ul class="text-black" id="mobile-menu-first">
+              <li class="h-11 border-b-2 flex justify-between">
+                <div class="my-3 ml-3" id="mobile-product-menu">产品</div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                 </svg>
               </li>
-              <li class="h-8 flex justify-between">
-                <div class="my-3.5 ml-3.5 text-sm">产品</div>
+              <li class="h-11 border-b-2 flex justify-between">
+                <div class="my-3 ml-3">制造商</div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                 </svg>
               </li>
-              <li class="h-8 flex justify-between">
-                <div class="my-3.5 ml-3.5 text-sm">产品</div>
+              <li class="h-11 border-b-2 flex justify-between">
+                <div class="my-3 ml-3">资源</div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                 </svg>
               </li>
             </ul>
-            <ul class="text-sm hidden">
-              <li class="h-8 py-3.5 pl-3.5">
-                产品
-              </li>
-              <li class="h-8 py-3.5 pl-3.5">
-                产品
-              </li>
-              <li class="h-8 py-3.5 pl-3.5">
-                产品
-              </li>
-              <li class="h-8 py-3.5 pl-3.5">
-                产品
-              </li>
-            </ul>
+
+            <div class="hidden" id="mobile-menu-second">
+              <div class="flex justify-start h-11 border-b-2" id="moblie-menu-back">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <div class="text-xs my-3.5">后退</div>
+              </div>
+              <ul>
+                <li class="h-8 flex justify-between">
+                  <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </li>
+                <li class="h-8 flex justify-between">
+                  <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </li>
+                <li class="h-8 flex justify-between">
+                  <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="hidden" id="mobile-menu-third">
+              <ul class="text-sm">
+                <li class="h-8 py-3.5 pl-3.5">
+                  产品
+                </li>
+                <li class="h-8 py-3.5 pl-3.5">
+                  产品
+                </li>
+                <li class="h-8 py-3.5 pl-3.5">
+                  产品
+                </li>
+                <li class="h-8 py-3.5 pl-3.5">
+                  产品
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -129,7 +136,7 @@
   $(document).ready(function() {
     // 打开移动端菜单
     $("#mobile-menu-opened").click(function() {
-      $("#mobile-menu-first").removeClass("hidden");
+      $("#mobile-menu-main").removeClass("hidden");
     });
 
     // 打开移动端二级级菜单
@@ -139,9 +146,9 @@
     });
 
     // 打开移动端三级菜单
-    $("#mobile-menu-first").click(function() {
-      $("#mobile-menu-first").addClass("hidden");
-      $("#mobile-menu-second").removeClass("hidden");
+    $("#mobile-product-menu-2").click(function() {
+      $("#mobile-menu-second").addClass("hidden");
+      $("#mobile-menu-third").removeClass("hidden");
     });
 
     // 后退
@@ -152,8 +159,7 @@
 
     // 关闭移动端菜单
     $("#moblie-menu-closed").click(function() {
-      $("#mobile-menu-first").removeClass("hidden");
-      $("#mobile-menu-second").addClass("hidden");
+      $("#mobile-menu-mian").addClass("hidden");
     });
   });
   <?php $this->endBlock(); ?>
