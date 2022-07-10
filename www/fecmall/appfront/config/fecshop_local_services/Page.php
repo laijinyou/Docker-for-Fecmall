@@ -79,7 +79,7 @@ return [
 
             'menu' => [
                 'displayHome' => [
-                    'enable' => true,        // 是否在菜单中显示home
+                    'enable' => false,        // 是否在菜单中显示home
                     'display'=> 'Home',        // 显示对应的字符。
                 ],
                 /*
