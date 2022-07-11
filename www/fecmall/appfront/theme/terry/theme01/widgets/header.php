@@ -80,45 +80,77 @@
                   </svg>
                   <div class="text-xs my-3.5">后退</div>
                 </div>
-                <ul>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                <div>
+                  <div class="group" id="product-menu-2">
+                    <div class="h-8 group-hover:border-l-2 group-hover:border-red-500">
+                      <a href="javascript:void(0);">
+                        <div class="flex justify-between">
+                          <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- 三级菜单 -->
+                    <div class="hidden group-hover:block group-hover:absolute group-hover:top-0 group-hover:-right-40 group-hover:bg-white peer-hover:z-50" id="menu-level3">
+                      <div class="flex justify-start h-11 border-b-2 lg:hidden" id="menu-level3-back">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                         </svg>
+                        <div class="text-xs my-3.5">后退</div>
                       </div>
-                    </a>
-                  </li>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+                      <ul class="text-sm lg:text-black lg:w-40 lg:border-l-2 lg:border-gray-200">
+                        <li class="h-8 py-3.5 pl-3.5 w-full">
+                          <a href="">
+                            产品3
+                          </a>
+                        </li>
+                        <li class="h-8 py-3.5 pl-3.5">
+                          <a href="">
+                            产品3
+                          </a>
+                        </li>
+                        <li class="h-8 py-3.5 pl-3.5">
+                          <a href="">
+                            产品3
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="product-menu-2">
+                    <div class="h-8">
+                      <a href="javascript:void(0);">
+                        <div class="flex justify-between">
+                          <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div id="product-menu-2">
+                    <div class="h-8">
+                      <a href="javascript:void(0);">
+                        <div class="flex justify-between">
+                          <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
 
 
-            <div>
-              <div id="menu2-level1">
+            <div class="group">
+              <div class="group-hover:bg-gray-700" id="menu1-level1">
                 <a href="javascript:void(0);">
                   <div class="flex justify-between h-11 border-b-2 lg:border-0">
                     <div class="my-3 ml-3">产品</div>
@@ -129,8 +161,8 @@
                 </a>
               </div>
               <!-- 二级菜单 -->
-              <div class="hidden" id="menu2-level2">
-                <div class="flex justify-start h-11 border-b-2" id="menu-level2-back">
+              <div class="hidden group-hover:block group-hover:bg-white lg:absolute lg:z-50" id="menu1-level2">
+                <div class="flex justify-start h-11 border-b-2 lg:hidden" id="menu-level2-back">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                   </svg>
@@ -140,7 +172,7 @@
                   <li class="h-8" id="product-menu-2">
                     <a href="javascript:void(0);">
                       <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
@@ -150,7 +182,7 @@
                   <li class="h-8" id="product-menu-2">
                     <a href="javascript:void(0);">
                       <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
@@ -160,7 +192,7 @@
                   <li class="h-8" id="product-menu-2">
                     <a href="javascript:void(0);">
                       <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
@@ -170,8 +202,8 @@
                 </ul>
               </div>
             </div>
-            <div>
-              <div id="menu3-level1">
+            <div class="group">
+              <div class="group-hover:bg-gray-700" id="menu1-level1">
                 <a href="javascript:void(0);">
                   <div class="flex justify-between h-11 border-b-2 lg:border-0">
                     <div class="my-3 ml-3">产品</div>
@@ -182,8 +214,8 @@
                 </a>
               </div>
               <!-- 二级菜单 -->
-              <div class="hidden" id="menu3-level2">
-                <div class="flex justify-start h-11 border-b-2" id="menu-level2-back">
+              <div class="hidden group-hover:block group-hover:bg-white lg:absolute lg:z-50" id="menu1-level2">
+                <div class="flex justify-start h-11 border-b-2 lg:hidden" id="menu-level2-back">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                   </svg>
@@ -193,7 +225,7 @@
                   <li class="h-8" id="product-menu-2">
                     <a href="javascript:void(0);">
                       <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
@@ -203,7 +235,7 @@
                   <li class="h-8" id="product-menu-2">
                     <a href="javascript:void(0);">
                       <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
@@ -213,7 +245,7 @@
                   <li class="h-8" id="product-menu-2">
                     <a href="javascript:void(0);">
                       <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm">产品</div>
+                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
@@ -226,32 +258,7 @@
 
 
 
-            <!-- 三级菜单 -->
-            <div class="hidden" id="menu-level3">
-              <div class="flex justify-start h-11 border-b-2" id="menu-level3-back">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <div class="text-xs my-3.5">后退</div>
-              </div>
-              <ul class="text-sm">
-                <li class="h-8 py-3.5 pl-3.5">
-                  <a href="">
-                    产品
-                  </a>
-                </li>
-                <li class="h-8 py-3.5 pl-3.5">
-                  <a href="">
-                    产品
-                  </a>
-                </li>
-                <li class="h-8 py-3.5 pl-3.5">
-                  <a href="">
-                    产品
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>
