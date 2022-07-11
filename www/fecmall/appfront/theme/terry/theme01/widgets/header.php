@@ -1,3 +1,18 @@
+<style>
+  /* since nested groupes are not supported we have to use 
+      regular css for the nested dropdowns
+  */
+  li > ul {
+    transform: translatex(100%) scale(0);
+  }
+  li:hover > ul {
+    transform: translatex(100%) scale(1);
+  }
+  li:hover > button svg {
+    color: rgb(220 38 38);
+  }
+</style>
+
 <div class="bg-black text-white">
   <!-- 上部分 -->
   <div class="h-16 text-white flex justify-between relative max-w-screen-xl mx-auto">
@@ -42,7 +57,7 @@
       </svg>
     </div>
   </div>
- 
+
   <!-- Menu -->
   <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full bg-opacity-60 bg-black hidden lg:static lg:h-16 lg:block" id="menu-main">
     <div class="relative w-3/4 h-full bg-white lg:static lg:bg-black lg:max-w-screen-xl lg:mx-auto">
@@ -57,210 +72,61 @@
       </div>
 
       <!-- 产品、制造商、资源 -->
-      <div class="text-black lg:ml-56 lg:mt-5">
-        <!-- 一级菜单 -->
-        <div>
-          <div class="lg:text-white lg:flex lg:justify-start">
-            <div class="group">
-              <div class="group-hover:bg-gray-700" id="menu1-level1">
-                <a href="javascript:void(0);">
-                  <div class="flex justify-between h-11 border-b-2 lg:border-0">
-                    <div class="my-3 ml-3">产品</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <!-- 二级菜单 -->
-              <div class="hidden group-hover:block group-hover:bg-white lg:absolute lg:z-50" id="menu1-level2">
-                <div class="flex justify-start h-11 border-b-2 lg:hidden" id="menu-level2-back">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+      <div class="lg:pl-64 lg:pt-8 text-black">
+        <!-- 产品 -->
+        <div class="group">
+          <button aria-haspopup="true" aria-controls="menu" class="text-white outline-none focus:outline-none px-3 py-1 flex items-center min-w-32 group-hover:bg-gray-700">
+            <span class="pr-1 font-bold flex-1">製品</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>
+          <ul id="menu" aria-hidden="true" class="z-50 text-xs bg-white border scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-60 h-96 py-4">
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600 relative">RF/IFおよびRFID</li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">はんだ付け、はんだ吸取、リワーク製品</li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">アイソレータ</li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">インダクタ、コイル、チョーク</li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">オプトエレクトロニクス</li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
+              <button aria-haspopup="true" aria-controls="menu-lang" class="w-full text-left flex items-center outline-none focus:outline-none">
+                <span class="pr-1 flex-1">オーディオ製品</span>
+                <span class="mr-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                   </svg>
-                  <div class="text-xs my-3.5">后退</div>
-                </div>
-                <div>
-                  <div class="group" id="product-menu-2">
-                    <div class="h-8 group-hover:border-l-2 group-hover:border-red-500">
-                      <a href="javascript:void(0);">
-                        <div class="flex justify-between">
-                          <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                          </svg>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- 三级菜单 -->
-                    <div class="hidden group-hover:block group-hover:absolute group-hover:top-0 group-hover:-right-40 group-hover:bg-white peer-hover:z-50" id="menu-level3">
-                      <div class="flex justify-start h-11 border-b-2 lg:hidden" id="menu-level3-back">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                        <div class="text-xs my-3.5">后退</div>
-                      </div>
-                      <ul class="text-sm lg:text-black lg:w-40 lg:border-l-2 lg:border-gray-200">
-                        <li class="h-8 py-3.5 pl-3.5 w-full">
-                          <a href="">
-                            产品3
-                          </a>
-                        </li>
-                        <li class="h-8 py-3.5 pl-3.5">
-                          <a href="">
-                            产品3
-                          </a>
-                        </li>
-                        <li class="h-8 py-3.5 pl-3.5">
-                          <a href="">
-                            产品3
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div id="product-menu-2">
-                    <div class="h-8">
-                      <a href="javascript:void(0);">
-                        <div class="flex justify-between">
-                          <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                          </svg>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div id="product-menu-2">
-                    <div class="h-8">
-                      <a href="javascript:void(0);">
-                        <div class="flex justify-between">
-                          <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                          </svg>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="group">
-              <div class="group-hover:bg-gray-700" id="menu1-level1">
-                <a href="javascript:void(0);">
-                  <div class="flex justify-between h-11 border-b-2 lg:border-0">
-                    <div class="my-3 ml-3">产品</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <!-- 二级菜单 -->
-              <div class="hidden group-hover:block group-hover:bg-white lg:absolute lg:z-50" id="menu1-level2">
-                <div class="flex justify-start h-11 border-b-2 lg:hidden" id="menu-level2-back">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <div class="text-xs my-3.5">后退</div>
-                </div>
-                <ul>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="group">
-              <div class="group-hover:bg-gray-700" id="menu1-level1">
-                <a href="javascript:void(0);">
-                  <div class="flex justify-between h-11 border-b-2 lg:border-0">
-                    <div class="my-3 ml-3">产品</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <!-- 二级菜单 -->
-              <div class="hidden group-hover:block group-hover:bg-white lg:absolute lg:z-50" id="menu1-level2">
-                <div class="flex justify-start h-11 border-b-2 lg:hidden" id="menu-level2-back">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 my-2.5 ml-2.5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
-                  </svg>
-                  <div class="text-xs my-3.5">后退</div>
-                </div>
-                <ul>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="h-8" id="product-menu-2">
-                    <a href="javascript:void(0);">
-                      <div class="flex justify-between">
-                        <div class="my-3.5 ml-3.5 text-sm lg:w-40 lg:text-black">产品2</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 my-3 mr-3 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-
-
-            
-          </div>
+                </span>
+              </button>
+              <ul id="menu-lang" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
+                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">HeNeレーザーシステム</li>
+                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
+                  <button aria-haspopup="true" aria-controls="menu-lang-python" class="w-full text-left flex items-center outline-none focus:outline-none">
+                    <span class="pr-1 flex-1">ディスプレ</span>
+                    <span class="mr-auto">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul id="menu-lang-python" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
+                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">キセノン照明</li>
+                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">キセノン照明キセノン照明</li>
+                  </ul>
+                </li>
+                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">キセノンキセノンキセノン</li>
+                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">Rustキセノンキセノンキセノン</li>
+              </ul>
+            </li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">ケーブル、ワイヤ - 管理</li>
+          </ul>
         </div>
+
+
+        <!-- 制造商 -->
+        <!-- 资源 -->
+
+
       </div>
     </div>
   </div>
