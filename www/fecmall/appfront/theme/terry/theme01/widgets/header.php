@@ -86,11 +86,11 @@
             </a>
           </button>
           <ul id="menu" aria-hidden="true" class="z-50 text-xs bg-white border scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-60 h-96 py-4">
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600 relative">RF/IFおよびRFID</li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">はんだ付け、はんだ吸取、リワーク製品</li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">アイソレータ</li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">インダクタ、コイル、チョーク</li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">オプトエレクトロニクス</li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600 relative"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
             <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
               <button aria-haspopup="true" aria-controls="menu-lang" class="w-full text-left outline-none focus:outline-none">
                 <a href="javascript:void(0);" class="flex items-center">
@@ -103,7 +103,7 @@
                 </a>
               </button>
               <ul id="menu-lang" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
-                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">HeNeレーザーシステム</li>
+                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
                 <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
                   <button aria-haspopup="true" aria-controls="menu-lang-python" class="w-full text-left outline-none focus:outline-none">
                     <a href="javascript:void(0);" class="flex items-center">
@@ -116,15 +116,15 @@
                     </a>
                   </button>
                   <ul id="menu-lang-python" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
-                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">キセノン照明</li>
-                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">キセノン照明キセノン照明</li>
+                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
                   </ul>
                 </li>
-                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">キセノンキセノンキセノン</li>
-                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">Rustキセノンキセノンキセノン</li>
+                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
               </ul>
             </li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">ケーブル、ワイヤ - 管理</li>
+            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
           </ul>
         </div>
 
