@@ -75,7 +75,7 @@
       <div class="text-black lg:pl-64 lg:pt-8">
         <!-- 产品 -->
         <div class="group">
-          <button id="menu1-level1" aria-haspopup="true" aria-controls="menu" class="w-full lg:w-16 h-10 lg:h-8 border-b-2 lg:border-b-0 px-2 outline-none focus:outline-none group-hover:bg-gray-700 lg:text-white">
+          <div id="menu1-level1" class="w-full lg:w-16 h-10 lg:h-8 border-b-2 lg:border-b-0 px-2 py-1 group-hover:bg-gray-700 lg:text-white">
             <a href="javascript:void(0);" class="flex justify-between lg:items-center">
               <div class="font-normal lg:font-bold py-1 lg:py-0">製品</div>
               <div>
@@ -84,7 +84,7 @@
                 </svg>
               </div>
             </a>
-          </button>
+          </div>
           <ul id="menu" aria-hidden="true" class="z-50 text-xs bg-white lg:border lg:scale-0 lg:group-hover:scale-100 lg:absolute lg:transition lg:duration-150 lg:ease-in-out lg:origin-top lg:w-60 lg:h-96 lg:py-4">
             <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600 relative"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
             <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
@@ -92,7 +92,7 @@
             <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
             <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
             <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
-              <button aria-haspopup="true" aria-controls="menu-lang" class="w-full text-left outline-none focus:outline-none">
+              <div>
                 <a href="javascript:void(0);" class="flex items-center">
                   <div class="pr-1 flex-1">オーディオ製品</div>
                   <div class="mr-auto">
@@ -101,11 +101,11 @@
                     </svg>
                   </div>
                 </a>
-              </button>
+              </div>
               <ul id="menu-lang" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
                 <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
                 <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
-                  <button aria-haspopup="true" aria-controls="menu-lang-python" class="w-full text-left outline-none focus:outline-none">
+                  <div>
                     <a href="javascript:void(0);" class="flex items-center">
                       <div class="pr-1 flex-1">ディスプレ</div>
                       <div class="mr-auto">
@@ -114,7 +114,7 @@
                         </svg>
                       </div>
                     </a>
-                  </button>
+                  </div>
                   <ul id="menu-lang-python" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
                     <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
                     <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
