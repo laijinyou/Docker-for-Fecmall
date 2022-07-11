@@ -75,14 +75,14 @@
       <div class="text-black lg:pl-64 lg:pt-8">
         <!-- 产品 -->
         <div class="group">
-          <button aria-haspopup="true" aria-controls="menu" class="text-white outline-none focus:outline-none px-3 py-1 min-w-32 group-hover:bg-gray-700">
-            <a href="javascript:void(0);" class="flex items-center">
-              <span class="pr-1 font-bold flex-1">製品</span>
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          <button aria-haspopup="true" aria-controls="menu" class="w-full lg:w-16 h-10 lg:h-8 border-b-2 lg:border-b-0 px-2 outline-none focus:outline-none group-hover:bg-gray-700 lg:text-white">
+            <a href="javascript:void(0);" class="flex justify-between lg:items-center">
+              <div class="font-normal lg:font-bold py-1 lg:py-0">製品</div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 lg:rotate-90 my-2 lg:my-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                 </svg>
-              </span>
+              </div>
             </a>
           </button>
           <ul id="menu" aria-hidden="true" class="z-50 text-xs bg-white border scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-60 h-96 py-4">
@@ -94,12 +94,12 @@
             <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
               <button aria-haspopup="true" aria-controls="menu-lang" class="w-full text-left outline-none focus:outline-none">
                 <a href="javascript:void(0);" class="flex items-center">
-                  <span class="pr-1 flex-1">オーディオ製品</span>
-                  <span class="mr-auto">
+                  <div class="pr-1 flex-1">オーディオ製品</div>
+                  <div class="mr-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                       <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                     </svg>
-                  </span>
+                  </div>
                 </a>
               </button>
               <ul id="menu-lang" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
@@ -107,12 +107,12 @@
                 <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
                   <button aria-haspopup="true" aria-controls="menu-lang-python" class="w-full text-left outline-none focus:outline-none">
                     <a href="javascript:void(0);" class="flex items-center">
-                      <span class="pr-1 flex-1">ディスプレ</span>
-                      <span class="mr-auto">
+                      <div class="pr-1 flex-1">ディスプレ</div>
+                      <div class="mr-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                         </svg>
-                      </span>
+                      </div>
                     </a>
                   </button>
                   <ul id="menu-lang-python" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
