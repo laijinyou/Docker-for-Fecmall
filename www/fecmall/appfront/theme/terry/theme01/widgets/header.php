@@ -75,7 +75,7 @@
       <div class="text-black lg:pl-64 lg:pt-8">
         <!-- 产品 -->
         <div class="group">
-          <div id="menu1-level1" class="w-full lg:w-16 h-10 lg:h-8 border-b-2 lg:border-b-0 px-2 py-1 group-hover:bg-gray-700 lg:text-white">
+          <div id="menu1-level1" class="w-full lg:w-16 h-10 lg:h-8 border-b-2 lg:border-b-0 px-2 py-1 lg:group-hover:bg-gray-700 lg:text-white hidden">
             <a href="javascript:void(0);" class="flex justify-between lg:items-center">
               <div class="font-normal lg:font-bold py-1 lg:py-0">製品</div>
               <div>
@@ -85,13 +85,13 @@
               </div>
             </a>
           </div>
-          <ul id="menu" aria-hidden="true" class="z-50 text-xs bg-white lg:border lg:scale-0 lg:group-hover:scale-100 lg:absolute lg:transition lg:duration-150 lg:ease-in-out lg:origin-top lg:w-60 lg:h-96 lg:py-4">
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600 relative"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
+          <ul id="menu" class="lg:z-50 text-xs bg-white lg:border lg:scale-0 lg:group-hover:scale-100 lg:absolute lg:transition lg:duration-150 lg:ease-in-out lg:origin-top lg:w-60 lg:h-96 lg:py-4">
+            <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
               <div>
                 <a href="javascript:void(0);" class="flex items-center">
                   <div class="pr-1 flex-1">オーディオ製品</div>
@@ -102,9 +102,9 @@
                   </div>
                 </a>
               </div>
-              <ul id="menu-lang" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
-                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
+              <ul id="menu-lang" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
+                <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+                <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600">
                   <div>
                     <a href="javascript:void(0);" class="flex items-center">
                       <div class="pr-1 flex-1">ディスプレ</div>
@@ -115,16 +115,16 @@
                       </div>
                     </a>
                   </div>
-                  <ul id="menu-lang-python" aria-hidden="true" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
-                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-                    <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+                  <ul id="menu-lang-python" class="bg-white border absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-60 h-96 py-4">
+                    <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+                    <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
                   </ul>
                 </li>
-                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
-                <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+                <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+                <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
               </ul>
             </li>
-            <li class="p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
+            <li class="h-10 lg:h-8 leading-6 lg:leading-4 border-b-2 lg:border-b-0 p-2 hover:bg-gray-100 hover:border-l-2 hover:border-red-600"><a href="javascript:void(0);">RF/IFおよびRFID</a></li>
           </ul>
         </div>
 
@@ -154,9 +154,9 @@
     $("#mobile-menu-opened").click(function() {
       // 每次打开都需要初始化所有hidden的值
       $("#menu-main").removeClass("hidden");
-      $("#menu1-level1, #menu2-level1, #menu3-level1").removeClass("hidden");
-      $("#menu1-level2, #menu2-level2, #menu3-level2").addClass("hidden");
-      $("#menu1-level3, #menu2-level3, #menu3-level3").addClass("hidden");
+      // $("#menu1-level1, #menu2-level1, #menu3-level1").removeClass("hidden");
+      // $("#menu1-level2, #menu2-level2, #menu3-level2").addClass("hidden");
+      // $("#menu1-level3, #menu2-level3, #menu3-level3").addClass("hidden");
     });
 
     // 关闭移动端菜单
