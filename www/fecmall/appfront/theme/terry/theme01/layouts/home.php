@@ -7,6 +7,7 @@ $jsOptions = [
 		'js'	=>[
 			'js/jquery-3.6.0.min.js',
 			'OwlCarousel2/owl.carousel.min.js',
+			'js/home.js',
 		],
 	],
 ];
@@ -14,9 +15,9 @@ $jsOptions = [
 $cssOptions = [
 	[
 		'css'	=>[
-      'css/home.css',
+      		'css/home.css',
 			'OwlCarousel2/owl.theme.default.min.css',
-      'OwlCarousel2/owl.carousel.min.css',
+      		'OwlCarousel2/owl.carousel.min.css',
 		],
 	],
 ];

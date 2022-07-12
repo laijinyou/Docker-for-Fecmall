@@ -17,7 +17,7 @@
   <!-- 上部分 -->
   <div class="h-16 text-white flex justify-between relative max-w-screen-xl mx-auto">
     <!-- menu -->
-    <div class="p-2 lg:hidden" id="menu-h5-opened">
+    <div class="p-2 lg:hidden" id="show-menu">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
       </svg>
@@ -59,12 +59,12 @@
   </div>
 
   <!-- Menu -->
-  <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full bg-opacity-60 bg-black hidden lg:static lg:h-16 lg:block" id="menu-main">
+  <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full h-full bg-opacity-60 bg-black hidden lg:static lg:h-16 lg:block" id="main-menu">
     <div class="relative w-3/4 h-full bg-white lg:static lg:bg-black lg:max-w-screen-xl lg:mx-auto">
       <!-- Left Sider Logo -->
       <div class="h-16 bg-black flex justify-between p-2.5 lg:hidden">
         <img class="h-11" src="https://www.digikey.cn/-/media/Images/Header/logo_dk.png" alt="logo">
-        <div id="menu-h5-closed">
+        <div id="hide-menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-11 w-11" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -87,63 +87,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-<script>
-  <?php $this->beginBlock('menu_h5_and_pc') ?>
-  $(document).ready(function() {
-    // 打开H5菜单
-    $("#menu-h5-opened").click(function() {
-      // 初始化所有hidden的值
-      $("#menu-main").removeClass("hidden");
-      $("div#menu-pc").addClass("hidden");
-      $("div#menu-h5").removeClass("hidden");
-
-      $("#products-level1").removeClass("hidden");
-      $("#products-level2").addClass("hidden");
-      $("#products-level3").addClass("hidden");
-      $("#products-level4").addClass("hidden");
-    });
-
-    // 关闭H5菜单
-    $("#menu-h5-closed").click(function() {
-      // 初始化所有hidden的值
-      $("#menu-main").addClass("hidden");
-      $("div#menu-pc").removeClass("hidden");
-      $("div#menu-h5").addClass("hidden");
-    });
-
-    // 点击产品products-level1
-    $("#products-level1").click(function() {
-      $("#products-level2").removeClass("hidden");
-      $("#products-level1").addClass("hidden");
-    });
-
-
-
-
-
-    // 点击二级菜单后退
-    $("#menu-level2-back").click(function() {
-      $("li#menu-level1").removeClass("hidden");
-      $("#menu-level2").addClass("hidden");
-    });
-
-    // 点击二级菜单
-    $("#product-menu-2").click(function() {
-      $("#menu-level2").addClass("hidden");
-      $("#menu-level3").removeClass("hidden");
-    });
-
-    // 点击三级菜单后退
-    $("#menu-level3-back").click(function() {
-      $("#menu-level3").addClass("hidden");
-      $("#menu-level2").removeClass("hidden");
-    });
-  });
-  <?php $this->endBlock(); ?>
-</script>
-<?php $this->registerJs($this->blocks['menu_h5_and_pc'], \yii\web\View::POS_END); ?>
