@@ -74,10 +74,7 @@
       <!-- 产品、制造商、资源 -->
       <div class="text-black lg:pl-64 lg:pt-8">
 
-        <!-- 产品菜单 PC -->
-        
-
-        <!-- 产品菜单 H5 -->
+        <!-- 产品菜单 -->
         <?= Yii::$service->page->widget->render('base/menu',$this); ?>
 
 
