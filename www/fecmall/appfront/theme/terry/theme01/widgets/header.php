@@ -72,13 +72,14 @@
       </div>
 
       <!-- 产品、制造商、资源 -->
-      <div class="text-black lg:pl-64 lg:pt-8">
+      <div class="text-black lg:flex lg:justify-start lg:pl-64 lg:pt-8">
 
         <!-- 产品菜单 -->
         <?= Yii::$service->page->widget->render('base/menu',$this); ?>
 
 
         <!-- 制造商 -->
+        <?= Yii::$service->page->widget->render('base/brandsMenu',$this); ?>
         <!-- 资源 -->
 
 

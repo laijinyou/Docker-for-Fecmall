@@ -10,6 +10,22 @@
 return [
     'page' => [
         'childService' => [
+            'widget' => [
+                'widgetConfig' => [
+                    'base' => [
+                        'brandsMenu' => [
+                            // 动态数据提供部分
+                            'class' => 'appfront\local\local_modules\BrandsMenu\block\index\Index',
+                            // 根据多模板的优先级，依次去模板找查找该文件，直到找到这个文件。
+                            'view'  => 'widgets/brandsMenu.php',
+                            // 缓存
+                            'cache' => [
+                                // 'timeout'    => 4500,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
             //'widget' => [
             //],
             'asset' => [
