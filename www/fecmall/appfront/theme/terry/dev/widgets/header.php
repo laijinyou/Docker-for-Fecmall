@@ -130,7 +130,68 @@
         </div>
 
         <!-- 产品菜单 H5 -->
-        <?= Yii::$service->page->widget->render('base/menu',$this); ?>
+        <div class="hidden" id="menu-h5">
+          <div id="products-level1">
+            <a href="javascript:void(0);">
+              <div class="px-4 py-2 flex justify-between border-b-2">
+                <div class="font-normal py-1">製品</div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 my-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id="products-level2" class="text-sm hidden">
+            <div class="flex items-center py-3 px-2 mb-4 border-b-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              <div class="text-xs w-full">后退</div>
+            </div>
+            <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID22222</div></a></div>
+            <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID22222</div></a></div>
+            <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID22222</div></a></div>
+            <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID22222</div></a></div>
+            <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID22222</div></a></div>
+            <div>
+              <a href="javascript:void(0);">
+                <div class="px-4 py-2 flex justify-between">
+                  <div class="">RF/IFおよびRFID22222</div>
+                  <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 my-0.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <div id="menu-h5-level3" class="hidden">
+                <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID333333</div></a></div>
+                <div>
+                  <a href="javascript:void(0);">
+                    <div class="px-4 py-2 flex justify-between">
+                      <div class="">RF/IFおよびRFID33333</div>
+                      <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 my-0.5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  <div id="menu-h5-level4" class="hidden">
+                    <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID444444IFおよびRFID444444</div></a></div>
+                    <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID444444</div></a></div>
+                  </div>
+                </div>
+                <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID333333</div></a></div>
+                <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID333333</div></a></div>
+              </div>
+            </div>
+            <div><a href="javascript:void(0);" class=""><div class="px-4 py-2">RF/IFおよびRFID22222</div></a></div>
+            <div class="border-t-2 mt-4"><a href=""><div class="text-center p-6 text-blue-800 text-xs font-bold">阅读全部</div></a></div>
+          </div>
+        </div>
 
 
         <!-- 制造商 -->
@@ -141,63 +202,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-<script>
-  <?php $this->beginBlock('menu_h5_and_pc') ?>
-  $(document).ready(function() {
-    // 打开H5菜单
-    $("#menu-h5-opened").click(function() {
-      // 初始化所有hidden的值
-      $("#menu-main").removeClass("hidden");
-      $("div#menu-pc").addClass("hidden");
-      $("div#menu-h5").removeClass("hidden");
-
-      $("#products-level1").removeClass("hidden");
-      $("#products-level2").addClass("hidden");
-      $("#products-level3").addClass("hidden");
-      $("#products-level4").addClass("hidden");
-    });
-
-    // 关闭H5菜单
-    $("#menu-h5-closed").click(function() {
-      // 初始化所有hidden的值
-      $("#menu-main").addClass("hidden");
-      $("div#menu-pc").removeClass("hidden");
-      $("div#menu-h5").addClass("hidden");
-    });
-
-    // 点击产品products-level1
-    $("#products-level1").click(function() {
-      $("#products-level2").removeClass("hidden");
-      $("#products-level1").addClass("hidden");
-    });
-
-
-
-
-
-    // 点击二级菜单后退
-    $("#menu-level2-back").click(function() {
-      $("li#menu-level1").removeClass("hidden");
-      $("#menu-level2").addClass("hidden");
-    });
-
-    // 点击二级菜单
-    $("#product-menu-2").click(function() {
-      $("#menu-level2").addClass("hidden");
-      $("#menu-level3").removeClass("hidden");
-    });
-
-    // 点击三级菜单后退
-    $("#menu-level3-back").click(function() {
-      $("#menu-level3").addClass("hidden");
-      $("#menu-level2").removeClass("hidden");
-    });
-  });
-  <?php $this->endBlock(); ?>
-</script>
-<?php $this->registerJs($this->blocks['menu_h5_and_pc'], \yii\web\View::POS_END); ?>
