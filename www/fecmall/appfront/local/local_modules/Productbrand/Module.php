@@ -1,6 +1,6 @@
 <?php
 
-namespace appfront\local\local_modules\Product;
+namespace appfront\local\local_modules\Productbrand;
 
 use fecshop\app\appfront\modules\AppfrontModule;
 use Yii;

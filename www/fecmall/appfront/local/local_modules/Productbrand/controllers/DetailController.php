@@ -1,12 +1,12 @@
 <?php
 
-namespace appfront\local\local_modules\Product\controllers;
+namespace appfront\local\local_modules\Productbrand\controllers;
 
 use fecshop\app\appfront\modules\AppfrontController;
 use Yii;
 use yii\web\Response;
 
-class BrandsController extends AppfrontController
+class DetailController extends AppfrontController
 {
 
     public function init()
