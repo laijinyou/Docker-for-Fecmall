@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-8 w-full mt-4">
+            <div class="flex flex-col gap-8 w-full mt-4 lg:mt-0">
                 <div class="">
                     <h3 class="font-bold border-b border-neutral-400 pb-2">RF/IF,射频/中频和 RFID</h3>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 text-xs text-neutral-500 mt-4">
