@@ -1,9 +1,9 @@
 <div class="mt-16 sm:mt-0 bg-zinc-200">
     <div class="max-w-screen-xl mx-auto py-4">
-        <div class="pb-2">
+        <div class="m-4">
             <h2 class="text-2xl">产品索引</h2>
         </div>
-        <div class="lg:flex lg:justify-start gap-10">
+        <div class="lg:flex lg:justify-start gap-10 m-4">
             <div class="lg:w-80 h-max bg-white p-4">
                 <div class="">
                     <div class="border-b p-2 font-bold text-sm">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-8 w-full">
+            <div class="flex flex-col gap-8 w-full mt-4">
                 <div class="">
                     <h3 class="font-bold border-b border-neutral-400 pb-2">RF/IF,射频/中频和 RFID</h3>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 text-xs text-neutral-500 mt-4">
