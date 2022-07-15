@@ -1,6 +1,6 @@
 <?php
 
-namespace appfront\local\local_modules\Catalogsearch\block\index;
+namespace appfront\local\local_modules\Product\block\search;
 
 use Yii;
 use yii\base\InvalidValueException;

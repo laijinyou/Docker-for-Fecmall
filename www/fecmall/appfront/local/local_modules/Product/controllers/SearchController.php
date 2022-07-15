@@ -1,12 +1,12 @@
 <?php
 
-namespace appfront\local\local_modules\Catalogsearch\controllers;
+namespace appfront\local\local_modules\Product\controllers;
 
 use fecshop\app\appfront\modules\AppfrontController;
 use Yii;
 use yii\web\Response;
 
-class IndexController extends AppfrontController
+class SearchController extends AppfrontController
 {
 
     public function init()

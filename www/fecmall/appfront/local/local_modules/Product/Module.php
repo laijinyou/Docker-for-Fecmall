@@ -1,6 +1,6 @@
 <?php
 
-namespace appfront\local\local_modules\Catalogsearch;
+namespace appfront\local\local_modules\Product;
 
 use fecshop\app\appfront\modules\AppfrontModule;
 use Yii;
